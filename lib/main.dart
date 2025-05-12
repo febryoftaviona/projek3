@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:projek3/hal_profil.dart';
+import 'navigation.dart';
+import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,6 +14,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+  debugShowCheckedModeBanner: false, // <-- tambahkan ini
+
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -31,7 +35,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home:HalProfil(),
+      home:Navigation(),
     );
   }
 }
